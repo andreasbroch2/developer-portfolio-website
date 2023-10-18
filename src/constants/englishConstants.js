@@ -21,7 +21,7 @@ export const englishProjects = [
     },
     {
         title: "AI Edge Marketing",
-        description: "This project is a powerful web platform built using Next.js that leverages WordPress as a headless CMS. It allows you to create and manage a blog with advanced SEO features, image optimization using Next Images, and navigation using Next Links.",
+        description: "This project is a powerful blog built using Next.js that leverages WordPress as a headless CMS. It allows you to create and manage a blog with advanced SEO features, image optimization using Next Images, and navigation using Next Links.",
         comment: "* No longer actively maintained or developed.",
         image: "/images/aiedge.png",
         tags: ["Next.js", "React", "WordPress", "Node.js", "GraphQL", "Tailwind CSS"],
