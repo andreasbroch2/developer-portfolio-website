@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import { projects } from "../../constants/constants";
 import { englishProjects } from "../../constants/englishConstants";
+import Image from "next/image";
 
 const Carousel2 = () => {
   const maxScrollWidth = useRef(0);
@@ -105,15 +105,33 @@ const Carousel2 = () => {
                 key={index}
                 className="carousel-item rounded-2xl bg-white/60 relative w-full md:w-[40rem] snap-start"
               >
-                <img
-                  src={resource.image || ""}
-                  alt={resource.title}
-                  className="w-[40rem] max-w-[40rem] h-[225px] rounded-t-2xl"
-                />
+                {resource.nextImage && (
+                  <Image src={resource.nextImage} className="w-[40rem] max-w-[40rem] h-[225px] rounded-t-2xl object-cover object-top" />
+                )}
+                {!resource.nextImage && (
+                  <img
+                    src={resource.image || ""}
+                    alt={resource.title}
+                    className="w-[40rem] max-w-[40rem] h-[225px] rounded-t-2xl"
+                  />
+                )}
                 <div className="flex flex-col p-4">
                   <h4 className="py-4 text-center">{resource.title}</h4>
                   <p>{resource.description}</p>
-                  <ul className="flex flex-wrap justify-center">
+                  <ul className="list-disc">
+                    {resource.results?.map((t, i) => {
+                      return (
+                        <li
+                          key={i}
+                          className="text-2xl px-4 py-2 list-disc list-inside"
+                        >
+                          {t}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  <p className="comment mt-4">{resource.comment}</p>
+                  <ul className="flex flex-wrap justify-center my-4">
                     {resource.tags.map((t, i) => {
                       return (
                         <li

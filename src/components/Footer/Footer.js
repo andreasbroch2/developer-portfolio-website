@@ -8,7 +8,7 @@ const Footer = () => {
         <ul>
           <div className="flex flex-col my-8">
             <h4>
-              Email: <a href="mailto:andreas@businessbuddy.dk"> info@andreasbroch.dk</a>
+              Email: <a href="mailto:info@andreasbroch.dk"> info@andreasbroch.dk</a>
             </h4>
           </div>
         </ul>
