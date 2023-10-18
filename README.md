@@ -1,17 +1,5 @@
 # Developer Portfolio Website
 
-## Table of Contents
-
-- [Project Description](#project-description)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Customization](#customization)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Project Description
 
 The **Developer Portfolio Website** is a personal website designed to showcase your skills, projects, and achievements as a developer. It serves as an online portfolio and resume, allowing you to present your work and credentials to potential employers or clients.
