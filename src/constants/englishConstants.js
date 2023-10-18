@@ -1,4 +1,4 @@
-import hololi from "../assets/hololi.png"
+import hololi from "../assets/hololi2.png"
 // Constants in english
 
 export const englishProjects = [
